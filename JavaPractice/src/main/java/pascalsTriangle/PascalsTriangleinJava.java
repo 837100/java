@@ -5,7 +5,7 @@ public class PascalsTriangleinJava {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int input=5; // 원하는 수 만큼 변경 가능
-		int[][] triarr=new int[input][input1]; //원하는 수 +1 크기의 2차원 배열 생성
+		int[][] triarr=new int[input+1][input+11]; //원하는 수 +1 크기의 2차원 배열 생성
 
 		for(int i=0;i<input;i++){ // 가장자리의 숫자가 1이므로 가장자리 숫자를 전부 1로 채워넣음
 			triarr[0][i]=1;
@@ -25,7 +25,7 @@ public class PascalsTriangleinJava {
 			int y=0;
 
 			//공백(처음에 공백이 있어야 삼각형 모양이 됨)
-			for(int k-0; k<input-i; k++){
+			for(int k=0; k<input-i; k++){
 				System.out.print(" ");
 			}
 			for(int j=0; j<i+1; j++){
