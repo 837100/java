@@ -92,7 +92,7 @@ public class SnailGameMain {
 				}
 				player1round++;
 			}
-
+			System.out.println();
 
 			if (round % 2==0){
 				System.out.println(player2.getName()+"님의 차례");
@@ -110,11 +110,11 @@ public class SnailGameMain {
 						if(firstdice==seconddice){
 							System.out.println("더블");
 							howgoing=diceLogic.howgoing(firstdice,seconddice);
-							player1howgoing+=howgoing;
+							player2howgoing+=howgoing;
 							throw new DoubleException();
 						} else {
 							howgoing=diceLogic.howgoing(firstdice,seconddice);
-							player1howgoing+=howgoing;
+							player2howgoing+=howgoing;
 						}
 					}
 				} catch (DoubleException e){
@@ -126,6 +126,7 @@ public class SnailGameMain {
 				}
 				player2round++;
 			}
+			System.out.println();
 		}
 	} // end of main method
 
