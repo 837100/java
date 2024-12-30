@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import logic.ComputerRandomLogic;
+import logic.rcpLogic;
+
 /**
  * Servlet implementation class Main
  */
@@ -42,7 +45,8 @@ public class Main extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
-		RcpLogic rcpL = new ComputerRandomLogic();
+		rcpLogic rcpL = new rcpLogic();
+		ComputerRandomLogic cpl = new ComputerRandomLogic();
 		cpl.setComResult("");
 		String user = request.getParameter("rcp");
 		String com = cpl.getComResult();
