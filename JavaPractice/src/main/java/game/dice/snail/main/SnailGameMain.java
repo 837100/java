@@ -3,21 +3,20 @@
  * (해야될 것) 중복된 코드 지우기
  */
 
-package JavaPractice.src.main.java.game.dice.snail.main;
-
-import JavaPractice.src.main.java.game.dice.snail.exception.DoubleException;
-import JavaPractice.src.main.java.game.dice.snail.logic.DiceLogic;
-import JavaPractice.src.main.java.game.dice.snail.player.bean.Player;
-import JavaPractice.src.main.java.game.dice.snail.status.bean.Status;
-import JavaPractice.src.main.java.game.dice.snail.status.view.StatusView;
+package game.dice.snail.main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
+import game.dice.snail.exception.DoubleException;
+import game.dice.snail.logic.DiceLogic;
+import game.dice.snail.object.Player;
+import game.dice.snail.status.Status;
+import game.dice.snail.status.StatusView;
 
 public class SnailGameMain {
 

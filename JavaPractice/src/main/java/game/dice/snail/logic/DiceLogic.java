@@ -1,6 +1,6 @@
-package JavaPractice.src.main.java.game.dice.snail.logic;
+package game.dice.snail.logic;
 
-import JavaPractice.src.main.java.game.dice.snail.status.bean.Status;
+import game.dice.snail.status.Status;
 
 public class DiceLogic {
     public int howgoing(int firstdice,int secondsdice){
